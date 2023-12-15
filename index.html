@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Hukum Mendel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <h1>Simulasi Hukum Mendel</h1>
+
+        <div id="options-container">
+            <label>Pilih sifat jeruk Orangtua 1:</label>
+            <select id="parent1Trait1">
+                <option value="Manis">Manis</option>
+                <option value="Asam">Asam</option>
+            </select>
+
+            <label>Pilih sifat jeruk Orangtua 2:</label>
+            <select id="parent2Trait1">
+                <option value="Manis">Manis</option>
+                <option value="Asam">Asam</option>
+            </select>
+
+            <label>Pilih sifat kedua jeruk Orangtua 1:</label>
+            <select id="parent1Trait2">
+                <option value="Bulat">Bulat</option>
+                <option value="Lancip">Lancip</option>
+            </select>
+
+            <label>Pilih sifat kedua jeruk Orangtua 2:</label>
+            <select id="parent2Trait2">
+                <option value="Bulat">Bulat</option>
+                <option value="Lancip">Lancip</option>
+            </select>
+
+            <label>Jumlah Keturunan:</label>
+            <input type="number" id="numOffspring" value="1" min="1">
+        </div>
+
+        <button onclick="generateOffspring()">Generate Keturunan</button>
+
+        <div id="offspringResults"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
